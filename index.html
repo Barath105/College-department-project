@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js"></script>
+    <title>SIMATS</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="child-1">
+                <img src="./images/simats.png" alt="">
+                
+            </div>
+            <div class="child-2">
+                <nav>
+                    <a href="#" id="home" class="active">Home</a>
+                    <a href="laboratory.html">Laboratory</a>
+                    <a href="faculties.html">Faculties</a>
+                    <div style="margin-bottom: 5px;"></div>
+                    <div class="dropdown">
+                        <a href="#" onclick="toggleDropdown()">More<span class="dropdown-icon">&#9660;</span></a>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="events.html">Events</a>
+                            <a href="achievements.html">Achievements</a>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 5px;"></div>
+                    <a href="collaborations.html">Collaborations</a>
+                    <a href="placement.html">Student Placement</a>
+                    <a href="contact.html">Contact</a>
+                    
+                </nav>
+                <div class="menu-icon" id="menuIcon">&#9776;</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 50px;"></div>
+
+    <div class="text-container">
+        <img src="./images/dept-img.jpg" alt="Department Image">
+    </div>
+
+    <div style="margin-bottom: 50px;"></div>
+    <!-- Home Page -->
+    <div class="imagecontainer">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="./images/lab2.jpg" alt="Slide 1">
+                <img src="./images/lab3.jpg" alt="Slide 2">
+                <img src="./images/lab1.jpg" alt="Slide 3">
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="prev" onclick="showPrev()">❮</div>
+            <div class="next" onclick="showNext()">❯</div>
+        </div>
+
+        <div class="about-content">
+            <h2>About the department</h2>
+            <div class="paragraph-container">
+            <p>Department of Signal and Image Processing is one of the super speciality department functioning under the Institute of Electronics and Communication Engineering of Saveetha School of Engineering, Saveetha Institute of Medical and Technical Sciences (SIMATS), Chennai.
+                The research groups of the department focus on the development of research concepts, prototypes and products related to healthcare applications by processing the bio-signals and images. We develop innovative solutions to real life problems using state of the art signal processing techniques and applications. 
+                The research interests of the faculty members of the department encompass the wide area of applied and fundamental aspects of Signal processing and Image processing. A number of International Conferences, Workshops, Guest lectures are provided for students for skill enhancement.
+                </p>
+            </div>
+            </div>
+    </div>
+
+    <div style="margin-bottom: 50px;"></div>
+
+    
+</body>
+</html>

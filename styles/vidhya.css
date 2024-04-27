@@ -1,0 +1,255 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+img{
+    display: flex;
+    width:50%;   
+}
+a{
+    text-decoration: none;
+    color:black;
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:hover{
+    font-size:15px;
+    color:blue;
+}
+.navbar{
+    background-color:lightpink;
+}
+
+
+.child-2 {
+    display: flex;
+    align-items: center;
+}
+
+.child-2 nav {
+    display: flex;
+}
+
+.child-2 nav a {
+    text-decoration: none;
+    color: #000; 
+    margin-right: 30px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .child-2 nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: lightgrey;
+        padding: 10px;
+    }
+
+    .child-2 nav.show {
+        display: flex;
+        z-index:1;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .child-2 nav a {
+        margin: 10px 0; /* Adjust the vertical spacing */
+    }
+
+    .child-2 nav a:not(:last-child) {
+        margin-right: 20px; /* Add horizontal gap */
+    }
+}
+
+
+
+/* Drop Down */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-icon {
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+
+.active {
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+h2 {
+    overflow: hidden; 
+    border-right: 2px solid transparent; 
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 0;
+    animation: typing 2s steps(40, end) forwards;
+    font-size: 25px;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+.containerprofile{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.containerprofile .box {
+    width: calc(30% - 10px);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.box .quote i {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #17c0eb;
+}
+
+.containerprofile .box .image {
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+    background: lightpink;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.box p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.copyrights{
+    justify-content: center;
+    text-align: center;
+}
+
+.details {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.details p {
+    line-height: 1.6;
+}
+
+.details p:first-child {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Add some styling to headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Optional: Add some styling to links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 10%; /* Adjust the width of the line as needed */
+    margin: 5px 0; /* Adjust the margin to control the space between the text and the line */
+    border-bottom: 2px solid #007bff; /* Set the color and thickness of the line */
+}
+
+
+
+
+
+
+        
+
+
